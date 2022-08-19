@@ -6,10 +6,10 @@ function App() {
       Navigation bar
       <Flex overflow={'auto'}>
         <View>
-        List of recommendations
+          List of recommendations
         </View>
         <Flex position={'relative'} overflow={'hidden'} grow={1}>
-        Details of recommendation
+          Details of recommendation
         </Flex>
       </Flex>
     </div>

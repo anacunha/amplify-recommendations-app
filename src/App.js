@@ -9,7 +9,7 @@ function App() {
           List of recommendations
         </View>
         <Flex position={'relative'} overflow={'hidden'} grow={1}>
-          Details of recommendation
+          {/* Details of recommendation */}
         </Flex>
       </Flex>
     </div>

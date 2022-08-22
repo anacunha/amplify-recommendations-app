@@ -1,5 +1,11 @@
 # AWS Innovate Every App
 
+## UI Components
+
+You can duplicate [this Figma file](https://www.figma.com/file/hRJKXhAUK7W4uN5biR0typ/AWS-Amplify-UI-Kit?node-id=861%3A3635) to import the UI components used during the demo.
+
+## Data Model
+
 ## Code
 
 `App.js`:

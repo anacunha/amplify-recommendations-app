@@ -5,9 +5,12 @@
  **************************************************************************/
 
 import React from "react";
+import { Recommendation } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type ItemProps = React.PropsWithChildren<Partial<FlexProps> & {
+    recommendation?: Recommendation;
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function Item(props: ItemProps): React.ReactElement;

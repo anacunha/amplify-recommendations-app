@@ -5,12 +5,16 @@
  **************************************************************************/
 
 import React from "react";
-import { Recommendation } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps } from "@aws-amplify/ui-react";
-export declare type DetailsProps = React.PropsWithChildren<Partial<FlexProps> & {
-    recommendation?: Recommendation;
+import { ItemProps } from "./Item";
+import { CollectionProps } from "@aws-amplify/ui-react";
+export declare type RecommendationListProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: (collectionItem: {
+        item: any;
+        index: number;
+    }) => ItemProps;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function Details(props: DetailsProps): React.ReactElement;
+export default function RecommendationList(props: RecommendationListProps): React.ReactElement;

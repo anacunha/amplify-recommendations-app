@@ -10,7 +10,7 @@ import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import MyIcon from "./MyIcon";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function Item(props) {
-  const { overrides, ...rest } = props;
+  const { recommendation, overrides, ...rest } = props;
   return (
     <Flex
       gap="0"
@@ -74,7 +74,7 @@ export default function Item(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Name"
+            children={recommendation?.name}
             {...getOverrideProps(overrides, "Name")}
           ></Text>
         </Flex>
@@ -95,7 +95,7 @@ export default function Item(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Description"
+          children={recommendation?.description}
           {...getOverrideProps(overrides, "Description")}
         ></Text>
       </Flex>

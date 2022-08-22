@@ -1,27 +1,16 @@
-import { Flex, useBreakpointValue, View } from "@aws-amplify/ui-react";
-import { useState } from "react";
-import { Details, NavBar, RecommendationList } from './ui-components';
+import { Flex, View } from "@aws-amplify/ui-react";
 
 function App() {
-  const sizeVariant = useBreakpointValue({
-    small: 'small',
-    medium: 'default'
-  })
-
-  const [selection, setSelection] = useState()
-
   return (
     <div className="App">
-      <NavBar width='100vw' size={sizeVariant} />
+      Navigation bar
       <Flex overflow={'auto'}>
         <View>
-          <RecommendationList overrideItems={({ item }) => ({
-            onClick: () => setSelection(item)
-          })} />
+          List of recommendations
         </View>
-        <View>
-          {selection ? <Details recommendation={selection} /> : ''}
-        </View>
+        <Flex position={'relative'} overflow={'hidden'} grow={1}>
+          {/* Details of recommendation */}
+        </Flex>
       </Flex>
     </div>
   );

@@ -37,6 +37,10 @@ function App() {
 export default App;
 ```
 
+### Extend
+
+[https://docs.amplify.aws/console/uibuilder/override/](https://docs.amplify.aws/console/uibuilder/override/)
+
 ## User Interface
 
 ### Responsive Design

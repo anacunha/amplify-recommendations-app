@@ -5,11 +5,11 @@
 `App.js`:
 
 ```javascript
-import { Flex, useBreakpointValue, View } from "@aws-amplify/ui-react";
+import { Flex, useBreakpointValue, View, withAuthenticator } from "@aws-amplify/ui-react";
 import { useState } from "react";
-import { Details, NavBar, RecommendationList } from './ui-components';
+import { RecommendationList, NavBar, Details } from './ui-components';
 
-function App() {
+function App({ signOut }) {
   const sizeVariant = useBreakpointValue({
     small: 'small',
     medium: 'default'
@@ -19,12 +19,16 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar width='100vw' size={sizeVariant} />
+      <NavBar width='100vw' size={sizeVariant} overrides={({
+        "Button": {
+          onClick: () => signOut()
+        }
+      })} />
       <Flex overflow={'auto'}>
         <View>
           <RecommendationList overrideItems={({ item }) => ({
             onClick: () => setSelection(item)
-          })} />
+          })}/>
         </View>
         <View>
           {selection ? <Details recommendation={selection} /> : ''}
@@ -34,7 +38,7 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
 ```
 
 ### Extend

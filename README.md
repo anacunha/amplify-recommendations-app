@@ -4,6 +4,8 @@
 
 You can duplicate [this Figma file](https://www.figma.com/file/hRJKXhAUK7W4uN5biR0typ/AWS-Amplify-UI-Kit?node-id=861%3A3635) to import the UI components used during the demo.
 
+![UI Components on Figma](https://user-images.githubusercontent.com/1771610/185991332-c71322bc-ec63-4622-98dd-7cfe86a07e7e.png)
+
 ## Data Model
 
 ## Code

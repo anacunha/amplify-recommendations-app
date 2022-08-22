@@ -1,21 +1,12 @@
-import { Flex, useBreakpointValue, View } from "@aws-amplify/ui-react";
-import { Recommendation, TopBar } from './ui-components';
+import { Flex, View } from "@aws-amplify/ui-react";
 
 function App() {
-  const sizeVariant = useBreakpointValue({
-    small: 'small',
-    medium: 'default'
-  })
-
   return (
     <div className="App">
-      <TopBar width='100vw' size={sizeVariant} />
+      Navigation bar
       <Flex overflow={'auto'}>
         <View>
-          <Recommendation />
-          <Recommendation />
-          <Recommendation />
-          <Recommendation />
+          List of recommendations
         </View>
         <Flex position={'relative'} overflow={'hidden'} grow={1}>
           {/* Details of recommendation */}

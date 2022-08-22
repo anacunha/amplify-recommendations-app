@@ -1,4 +1,4 @@
-import { Flex, useBreakpointValue, View } from "@aws-amplify/ui-react";
+import { Flex, useBreakpointValue, View, withAuthenticator } from "@aws-amplify/ui-react";
 import { useState } from "react";
 import { RecommendationList, NavBar, Details } from './ui-components';
 
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);

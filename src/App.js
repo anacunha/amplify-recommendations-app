@@ -8,9 +8,9 @@ function App() {
         <View>
           List of recommendations
         </View>
-        <Flex position={'relative'} overflow={'hidden'} grow={1}>
+        <View>
           {/* Details of recommendation */}
-        </Flex>
+        </View>
       </Flex>
     </div>
   );

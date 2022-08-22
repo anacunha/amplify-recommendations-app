@@ -1,4 +1,4 @@
-# AWS Innovate Every App
+# AWS Innovate Every App - Amplify
 
 ## UI Components
 

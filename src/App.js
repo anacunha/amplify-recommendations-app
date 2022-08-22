@@ -2,7 +2,7 @@ import { Flex, useBreakpointValue, View, withAuthenticator } from "@aws-amplify/
 import { useState } from "react";
 import { RecommendationList, NavBar, Details } from './ui-components';
 
-function App() {
+function App({ signOut }) {
   const sizeVariant = useBreakpointValue({
     small: 'small',
     medium: 'default'
@@ -12,7 +12,11 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar width='100vw' size={sizeVariant} />
+      <NavBar width='100vw' size={sizeVariant} overrides={({
+        "Button": {
+          onClick: () => signOut()
+        }
+      })} />
       <Flex overflow={'auto'}>
         <View>
           <RecommendationList overrideItems={({ item }) => ({

@@ -1,5 +1,5 @@
 import { Flex, useBreakpointValue, View } from "@aws-amplify/ui-react";
-import { Item, NavBar } from './ui-components';
+import { RecommendationList, NavBar } from './ui-components';
 
 function App() {
   const sizeVariant = useBreakpointValue({
@@ -12,10 +12,7 @@ function App() {
       <NavBar width='100vw' size={sizeVariant} />
       <Flex overflow={'auto'}>
         <View>
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+          <RecommendationList />
         </View>
         <View>
           {/* Details of recommendation */}

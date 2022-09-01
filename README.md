@@ -8,6 +8,8 @@ You can duplicate [this Figma file](https://www.figma.com/file/hRJKXhAUK7W4uN5bi
 
 ## Data Model
 
+![Recommendation data model](https://user-images.githubusercontent.com/1771610/188013516-0dff4ffc-bfe4-48ce-8af8-b128bf0f9954.png)
+
 ## Code
 
 `App.js`:

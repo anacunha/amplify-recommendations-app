@@ -13,7 +13,7 @@ You can duplicate [this Figma file](https://www.figma.com/file/hRJKXhAUK7W4uN5bi
 `App.js`:
 
 ```javascript
-import { Flex, useBreakpointValue, View, withAuthenticator } from "@aws-amplify/ui-react";
+import { Flex, useBreakpointValue, View } from "@aws-amplify/ui-react";
 import { useState } from "react";
 import { RecommendationList, NavBar, Details } from './ui-components';
 
@@ -46,7 +46,7 @@ function App({ signOut }) {
   );
 }
 
-export default withAuthenticator(App);
+export default App;
 ```
 
 ### Extend

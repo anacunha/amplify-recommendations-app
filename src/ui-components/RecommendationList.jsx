@@ -26,10 +26,8 @@ export default function RecommendationList(props) {
   return (
     <Collection
       type="list"
-      searchPlaceholder="Search..."
       direction="column"
-      alignItems="stretch"
-      justifyContent="left"
+      justifyContent="stretch"
       items={items || []}
       {...rest}
       {...getOverrideProps(overrides, "RecommendationList")}

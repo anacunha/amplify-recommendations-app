@@ -4,9 +4,9 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
-export { default as Item } from "./Item";
-export { default as RecommendationList } from "./RecommendationList";
-export { default as Details } from "./Details";
-export { default as NavBar } from "./NavBar";
 export { default as MyIcon } from "./MyIcon";
+export { default as RecommendationList } from "./RecommendationList";
+export { default as Item } from "./Item";
+export { default as NavBar } from "./NavBar";
+export { default as Details } from "./Details";
 export { default as studioTheme } from "./studioTheme";
